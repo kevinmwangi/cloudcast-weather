@@ -1,0 +1,27 @@
+.main_conditions {
+  h1 {
+    font-size: 3rem;
+    color: black;
+  }
+
+  .current_weather {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    column-gap: 1rem;
+
+    .current_conditions {
+      grid-column: 1/2;
+    }
+
+    .current_conditions_details {
+      grid-column: 2/3;
+
+      .todays_weather_details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+      }
+    }
+  }
+}

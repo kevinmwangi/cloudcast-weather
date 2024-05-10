@@ -1,0 +1,40 @@
+.currentWeather {
+  .conditionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    background-color: var(--tertiary);
+
+    .weatherImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      width: 200px;
+    }
+
+    .conditionDescription {
+      .currentWeatherTemp {
+        padding: 1rem 0;
+
+        .weatherDescription {
+          font-size: 16px;
+          line-height: 1.2;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: var(--primary);
+          width: auto;
+          padding: 1rem 0;
+        }
+      }
+      .locationTime {
+        padding: 2rem 0;
+        border-top: 1px solid var(--primary);
+      }
+    }
+  }
+}

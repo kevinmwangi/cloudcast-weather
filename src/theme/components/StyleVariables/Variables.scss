@@ -1,0 +1,46 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: #0f172a;
+    --secondary: #ffffff;
+    --tertiary: #f8fafc;
+    --accent: #64748b
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #ffffff;
+    --secondary: #0f172a;
+    --tertiary: #1e293b;
+    --accent: #94a3b8
+  }
+
+  :root img {
+    -webkit-filter: brightness(100);
+    filter: brightness(100)
+  }
+}
+
+html.light {
+  --primary: #0f172a;
+  --secondary: #ffffff;
+  --tertiary: #f8fafc;
+  --accent: #64748b
+}
+
+html.light img {
+  -webkit-filter: none;
+  filter: none
+}
+
+html.dark {
+  --primary: #ffffff;
+  --secondary: #0f172a;
+  --tertiary: #1e293b;
+  --accent: #94a3b8
+}
+
+html.dark img {
+  -webkit-filter: brightness(100);
+  filter: brightness(100)
+}
